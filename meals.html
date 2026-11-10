@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Healthy Meal Solution - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Smart Healthy Meal</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="meals.html" class="active">Food Menu</a></li>
+            <li><a href="tips.html">Budget Tips</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Smart Healthy Meal Menu</h1>
+        
+        <div class="form-group" style="max-width: 300px;">
+            <label for="filterSelect">Filter Meals:</label>
+            <select id="filterSelect">
+                <option value="all">All Meals</option>
+                <option value="high-protein">High Protein</option>
+                <option value="budget">Super Budget</option>
+            </select>
+        </div>
+
+        <div class="food-grid">
+            <!-- Food Card 1 -->
+            <div class="food-card" data-category="high-protein">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Grilled Chicken Bowl">
+                <div class="card-body">
+                    <span class="price-tag">$3.50 / serving</span>
+                    <h3>Grilled Chicken Grain Bowl</h3>
+                    <div class="calorie-badge">🔥 490 kcal</div>
+                    <ul class="nutrition-list">
+                        <li><strong>Protein:</strong> 38g</li>
+                        <li><strong>Carbs:</strong> 45g</li>
+                        <li><strong>Fat:</strong> 12g</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Food Card 2 -->
+            <div class="food-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Tuna Quinoa Salad">
+                <div class="card-body">
+                    <span class="price-tag">$2.20 / serving</span>
+                    <h3>Tuna & Veggie Salad</h3>
+                    <div class="calorie-badge">🔥 410 kcal</div>
+                    <ul class="nutrition-list">
+                        <li><strong>Protein:</strong> 32g</li>
+                        <li><strong>Carbs:</strong> 35g</li>
+                        <li><strong>Fat:</strong> 9g</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Food Card 3 -->
+            <div class="food-card" data-category="budget">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80" alt="Tofu Rice Bowl">
+                <div class="card-body">
+                    <span class="price-tag">$1.90 / serving</span>
+                    <h3>Sesame Tofu Veggie Bowl</h3>
+                    <div class="calorie-badge">🔥 380 kcal</div>
+                    <ul class="nutrition-list">
+                        <li><strong>Protein:</strong> 22g</li>
+                        <li><strong>Carbs:</strong> 52g</li>
+                        <li><strong>Fat:</strong> 10g</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
